@@ -1,0 +1,60 @@
+=== Run information ===
+
+Scheme:weka.clusterers.XMeans -I 1 -M 1000 -J 1000 -L 2 -H 3 -B 1.0 -C 0.5 -D "weka.core.EuclideanDistance -R first-last" -S 9
+Relation:     Dataset
+Instances:    178
+Attributes:   14
+              type
+              alcohol
+              malic acid
+              ash
+              alcalinity of ash
+              magnesium
+              total phenols
+              flavanoids
+              non flavanoids phenols
+              prosnthocyanins
+              color intensity
+              hue
+              od280
+              proline
+Test mode:evaluate on training data
+
+=== Model and evaluation on training set ===
+
+
+XMeans
+======
+Requested iterations            : 1
+Iterations performed            : 1
+Splits prepared                 : 2
+Splits performed                : 1
+Cutoff factor                   : 0.5
+Percentage of splits accepted 
+by cutoff factor                : 0 %
+------
+Cutoff factor                   : 0.5
+------
+
+Cluster centers                 : 3 centers
+
+Cluster 0
+            1.1805555555555556 13.493055555555559 1.9733333333333343 2.4263888888888885 17.740277777777777 106.30555555555556 2.8570833333333336 2.96625 0.2816666666666667 1.972777777777778 5.195277777777778 1.0651388888888889 3.1549999999999994 1029.8055555555557
+Cluster 1
+            2.979591836734694 13.151632653061224 3.344489795918368 2.43469387755102 21.43877551020408 99.0204081632653 1.6781632653061225 0.7979591836734693 0.45081632653061215 1.1630612244897958 7.343265285714286 0.6859183673469389 1.6902040816326522 627.5510204081633
+Cluster 2
+            2.0 12.24877192982456 1.9282456140350877 2.232280701754386 20.04035087719298 92.0701754385965 2.1156140350877197 1.90421052631579 0.38666666666666666 1.4763157894736842 2.9203508771929827 1.0548421052631578 2.7175438596491217 492.12280701754383
+
+Distortion: 111.597628
+BIC-Value : 255.137914
+
+
+Time taken to build model (full training data) : 0.01 seconds
+
+=== Model and evaluation on training set ===
+
+Clustered Instances
+
+0       62 ( 35%)
+1       49 ( 28%)
+2       67 ( 38%)

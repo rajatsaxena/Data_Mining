@@ -1,0 +1,60 @@
+=== Run information ===
+
+Scheme:weka.clusterers.XMeans -I 1 -M 1000 -J 1000 -L 2 -H 3 -B 1.0 -C 0.5 -D "weka.core.EuclideanDistance -R first-last" -S 6
+Relation:     Dataset
+Instances:    178
+Attributes:   14
+              type
+              alcohol
+              malic acid
+              ash
+              alcalinity of ash
+              magnesium
+              total phenols
+              flavanoids
+              non flavanoids phenols
+              prosnthocyanins
+              color intensity
+              hue
+              od280
+              proline
+Test mode:evaluate on training data
+
+=== Model and evaluation on training set ===
+
+
+XMeans
+======
+Requested iterations            : 1
+Iterations performed            : 1
+Splits prepared                 : 2
+Splits performed                : 1
+Cutoff factor                   : 0.5
+Percentage of splits accepted 
+by cutoff factor                : 0 %
+------
+Cutoff factor                   : 0.5
+------
+
+Cluster centers                 : 3 centers
+
+Cluster 0
+            2.888888888888889 13.095370370370372 3.2020370370370377 2.408333333333333 21.11851851851852 98.44444444444444 1.6742592592592596 0.8394444444444444 0.456111111111111 1.1468518518518518 7.006296277777778 0.7112222222222223 1.7051851851851845 622.5370370370371
+Cluster 1
+            2.0 12.246461538461539 1.912769230769231 2.250923076923076 20.376923076923077 94.83076923076923 2.316153846153847 2.152615384615385 0.3487692307692307 1.679846153846154 3.0127692307692313 1.0670769230769228 2.869076923076922 515.4307692307692
+Cluster 2
+            1.0 13.744745762711865 2.0106779661016954 2.455593220338984 17.037288135593222 106.33898305084746 2.8401694915254234 2.982372881355932 0.29 1.8993220338983055 5.528305084745763 1.0620338983050848 3.1577966101694916 1115.7118644067796
+
+Distortion: 111.541484
+BIC-Value : 275.014162
+
+
+Time taken to build model (full training data) : 0.01 seconds
+
+=== Model and evaluation on training set ===
+
+Clustered Instances
+
+0       51 ( 29%)
+1       68 ( 38%)
+2       59 ( 33%)

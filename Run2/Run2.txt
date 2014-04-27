@@ -1,0 +1,65 @@
+=== Run information ===
+
+Scheme:weka.clusterers.SimpleKMeans -N 3 -A "weka.core.EuclideanDistance -R first-last" -I 500 -S 6
+Relation:     Dataset
+Instances:    178
+Attributes:   14
+              type
+              alcohol
+              malic acid
+              ash
+              alcalinity of ash
+              magnesium
+              total phenols
+              flavanoids
+              non flavanoids phenols
+              prosnthocyanins
+              color intensity
+              hue
+              od280
+              proline
+Test mode:evaluate on training data
+
+=== Model and evaluation on training set ===
+
+
+kMeans
+======
+
+Number of iterations: 5
+Within cluster sum of squared errors: 49.84918136799645
+Missing values globally replaced with mean/mode
+
+Cluster centroids:
+                                    Cluster#
+Attribute                Full Data         0         1         2
+                             (178)      (60)      (69)      (49)
+================================================================
+type                        1.9382    1.0167         2    2.9796
+alcohol                    13.0006   13.7322   12.2572   13.1516
+malic acid                  2.3363     2.005    1.9086    3.3445
+ash                         2.3665     2.458    2.2386    2.4347
+alcalinity of ash          19.4949   17.2533   20.0638   21.4388
+magnesium                  99.7416  106.8833   94.0435   99.0204
+total phenols               2.2951    2.8478    2.2526    1.6782
+flavanoids                  2.0293    2.9808    2.0762     0.798
+non flavanoids phenols      0.3619    0.2887    0.3623    0.4508
+prosnthocyanins             1.5909    1.9003    1.6257    1.1631
+color intensity             5.0581     5.492     3.058    7.3433
+hue                         0.9574    1.0662    1.0557    0.6859
+od280                       2.6117    3.1635    2.7862    1.6902
+proline                   746.8933 1113.5333  512.8261   627.551
+
+
+
+
+Time taken to build model (full training data) : 0.01 seconds
+
+=== Model and evaluation on training set ===
+
+Clustered Instances
+
+0       60 ( 34%)
+1       69 ( 39%)
+2       49 ( 28%)
+

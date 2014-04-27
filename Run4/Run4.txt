@@ -1,0 +1,60 @@
+=== Run information ===
+
+Scheme:weka.clusterers.XMeans -I 1 -M 1000 -J 1000 -L 2 -H 3 -B 1.0 -C 0.5 -D "weka.core.EuclideanDistance -R first-last" -S 3
+Relation:     Dataset
+Instances:    178
+Attributes:   14
+              type
+              alcohol
+              malic acid
+              ash
+              alcalinity of ash
+              magnesium
+              total phenols
+              flavanoids
+              non flavanoids phenols
+              prosnthocyanins
+              color intensity
+              hue
+              od280
+              proline
+Test mode:evaluate on training data
+
+=== Model and evaluation on training set ===
+
+
+XMeans
+======
+Requested iterations            : 1
+Iterations performed            : 1
+Splits prepared                 : 2
+Splits performed                : 1
+Cutoff factor                   : 0.5
+Percentage of splits accepted 
+by cutoff factor                : 0 %
+------
+Cutoff factor                   : 0.5
+------
+
+Cluster centers                 : 3 centers
+
+Cluster 0
+            2.857142857142857 13.06982142857143 3.1957142857142857 2.4055357142857146 21.15892857142857 97.85714285714286 1.676607142857143 0.8721428571428573 0.4558928571428571 1.159107142857143 6.861428553571428 0.7156428571428572 1.7333928571428565 619.375
+Cluster 1
+            2.0 12.242222222222223 1.8774603174603177 2.248412698412698 20.317460317460316 95.23809523809524 2.334444444444445 2.1652380952380956 0.3455555555555555 1.6858730158730162 3.0147619047619054 1.0744444444444439 2.8809523809523805 514.8412698412699
+Cluster 2
+            1.0 13.744745762711865 2.0106779661016954 2.455593220338984 17.037288135593222 106.33898305084746 2.8401694915254234 2.982372881355932 0.29 1.8993220338983055 5.528305084745763 1.0620338983050848 3.1577966101694916 1115.7118644067796
+
+Distortion: 111.614013
+BIC-Value : 272.211482
+
+
+Time taken to build model (full training data) : 0.02 seconds
+
+=== Model and evaluation on training set ===
+
+Clustered Instances
+
+0       51 ( 29%)
+1       68 ( 38%)
+2       59 ( 33%)
